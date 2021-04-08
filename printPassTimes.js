@@ -12,10 +12,12 @@
 
 const printPassTimes = function(passTimes) {
   for (const pass of passTimes) {
-    const datetime = new Date(0);
+    const date = new Date(pass.risetime * 1000);
     const duration = pass.duration;
-    datetime.setUTCSeconds(pass.risetime);
-    console.log(`Next pass at ${datetime} for ${duration} seconds!`);
+    // const datetime = new Date(0);
+    //datetime.setUTCSeconds(pass.risetime);
+    
+    console.log(`Next pass at ${date} for ${duration} seconds!`);
   }
 };
 
