@@ -113,7 +113,6 @@ const nextISSTimesForMyLocation = function(callback) {
       });
     });
   });
-  // empty for nowa
 };
 
 // Only export nextISSTimesForMyLocation and not the other three (API request) functions.
